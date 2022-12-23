@@ -29,10 +29,11 @@ function getPicture() {
     }
 
     const picture = {
-        id: 3,
+        id: getRandomInt(1, 1000),
         url: `./photos/${getRandomInt(1, 25)}.jpg`,
         description: '3/10',
-        comments: comments
+        comments: comments,
+        likes: getRandomInt(15, 200)
     };
 
     return picture;
